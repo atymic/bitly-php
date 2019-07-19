@@ -1,0 +1,28 @@
+{
+  "name": "atymic/bitly",
+  "description": "A bit.ly client",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "atymic",
+      "email": "atymicq@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8",
+    "blastcloud/guzzler": "^1.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Atymic\\Bitly\\": "src/"
+    }
+  },
+  "scripts": {
+    "test": "mkdir -p .cache && phpunit --cache-result-file=.cache/phpunit"
+  }
+}
